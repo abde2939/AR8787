@@ -38,9 +38,9 @@
     <h2 class="author">John Doe</h2>
     <h3 class="description"></h3>
     <div class="count-box">
-      <a href="/archives"><div><strong>2</strong><br>文章</div></a>
+      <a href="/archives"><div><strong>3</strong><br>文章</div></a>
       <a href="/categories"><div><strong>0</strong><br>分类</div></a>
-      <a href="/tags"><div><strong>4</strong><br>标签</div></a>
+      <a href="/tags"><div><strong>8</strong><br>标签</div></a>
     </div>
     <ul class="blog-link">
      
@@ -65,6 +65,86 @@
 </div>
 
         <section id="main">
+  
+    <article id="post-linux-1" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/AR8787/2017/10/19/linux-1/" class="article-date">
+  <time class="post-time" datetime="2017-10-19T15:47:11.426Z" itemprop="datePublished">
+    <span class="post-month">10月</span><br/>
+    <span class="post-day">19</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/AR8787/2017/10/19/linux-1/">第1篇認真教學</a>
+    </h1>
+  
+
+        <div>
+          
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code class="bash">障礙 : 再用linux安裝用中文,但是每當用 Terminal 卻很麻煩,因為要打中文,
+    但在某些情況下不想直接改系統語系或是改了沒有用
+</code></pre>
+<p>‘解決方法’ : 把那些目錄改名子,但是並非直接改,因為那會造成路徑遺失所以要用到 Terminal 來改</p>
+<p>方法1 : 這也是大多網路上教的方法</p>
+<pre><code>export LANG=en_US
+xdg-user-dirs-gtk-update
+</code></pre><p>方法2 : 我也是用這個方法,當初上網找很久我用的系統是  kali linux 或許可以試試</p>
+<p>step 1  修改user-dir.dirs<br>        輸入:nano ~/.config/user-dirs.dirs<br>(這裡用nano 單純是因為我vim 根本是新手,所以只好用這個)</p>
+<p>step 2   你會看到以下的訊息</p>
+<pre><code>This file is written by xdg-user-dirs-update
+# If you want to change or add directories, just edit the line you&apos;re
+# interested in. All local changes will be retained on the next run
+# Format is XDG_xxx_DIR=&quot;$HOME/yyy&quot;, where yyy is a shell-escaped
+# homedir-relative path, or XDG_xxx_DIR=&quot;/yyy&quot;, where /yyy is an
+# absolute path. No other format is supported.
+#
+XDG_DESKTOP_DIR=&quot;$HOME/桌面&quot;
+XDG_DOWNLOAD_DIR=&quot;$HOME/下載&quot;
+XDG_PUBLICSHARE_DIR=&quot;$HOME/公用&quot;
+XDG_DOCUMENTS_DIR=&quot;$HOME/文件&quot;
+XDG_MUSIC_DIR=&quot;$HOME/音樂&quot;
+XDG_PICTURES_DIR=&quot;$HOME/圖片&quot;
+XDG_VIDEOS_DIR=&quot;$HOME/影片&quot;
+</code></pre><p>step 3  更改那些中文為英文</p>
+<pre><code>ex    XDG_DESKTOP_DIR=&quot;$HOME/桌面&quot; =====&gt;   XDG_DESKTOP_DIR=&quot;$HOME/Desktop&quot;  
+        以此類推
+</code></pre><p>step 4  到HOME 下面新創一個剛剛打的英文名稱,之後再把舊的刪除就大功告成</p>
+<p>＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿<br>這是我寫的第一篇linux 教學我也是個自己慢慢摸索linux世界的新手</p>
+<p><img src="https://i.imgur.com/iQO2Jdb.gif" alt=""></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ikaros0327.github.io/AR8787/2017/10/19/linux-1/" data-id="cj8yo550500034ovtsv12nldd" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/AR8787/tags/kali-linux/">kali linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/AR8787/tags/ssh/">ssh</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/AR8787/tags/中文化/">中文化</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/AR8787/tags/亂碼/">亂碼</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
   
     <article id="post-ar87" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -111,7 +191,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ikaros0327.github.io/AR8787/2017/10/17/ar87/" data-id="cj8vor6i4000250vt1tt6pm1d" class="article-share-link">Share</a>
+      <a data-url="https://ikaros0327.github.io/AR8787/2017/10/17/ar87/" data-id="cj8yo550200024ovtp1i2bzqr" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/AR8787/tags/可愛/">可愛</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/AR8787/tags/性感/">性感</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/AR8787/tags/恐怖片/">恐怖片</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/AR8787/tags/露點/">露點</a></li></ul>
@@ -172,7 +252,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ikaros0327.github.io/AR8787/2017/10/16/hello-world/" data-id="cj8vor6ht000050vtucooclnb" class="article-share-link">Share</a>
+      <a data-url="https://ikaros0327.github.io/AR8787/2017/10/16/hello-world/" data-id="cj8yo54zx00014ovthv83domm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -224,9 +304,9 @@
     <h2 class="author">John Doe</h2>
     <h3 class="description"></h3>
     <div class="count-box">
-      <a href="/archives"><div><strong>2</strong><br>文章</div></a>
+      <a href="/archives"><div><strong>3</strong><br>文章</div></a>
       <a href="/categories"><div><strong>0</strong><br>分类</div></a>
-      <a href="/tags"><div><strong>4</strong><br>标签</div></a>
+      <a href="/tags"><div><strong>8</strong><br>标签</div></a>
     </div>
 
 
@@ -295,7 +375,7 @@ new WOW().init();
           
             <a href="/AR8787/archives" title="" class="menuItem">歸檔</a>
           
-            <a href="https://i.imgur.com/s1h1vL6.gifv" title="" class="menuItem">跳舞瞜</a>
+            <a href="https://i.imgur.com/s1h1vL6.gif" title="" class="menuItem">跳舞瞜</a>
           
             <a href="https://imgur.com/a/Vcb1X" title="" class="menuItem">一堆照片</a>
           
