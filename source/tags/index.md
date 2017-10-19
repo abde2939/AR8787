@@ -1,3 +1,5 @@
-title: "Tags"
-layout: "tags"
+---
+title: タグズ
+type: "tags"
+comments: false
 ---
